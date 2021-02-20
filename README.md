@@ -34,8 +34,8 @@ Obs: é possível que o mesmo usuário (cliente) entre em mais de uma sala. Por 
 #### Pacote `redes` :
 * Classes:  
     * **Client** | responsável por:
-        * Receber todas os comandos do usuário, executá-los e responder.
-        * Se comunicar com o servidor, repassando comandos quando necessário e aguardar a resposta.
+        * Receber todas os comandos do usuário, executá-los e responder
+        * Se comunicar com o servidor, repassando comandos quando necessário e aguardar a resposta
         * Instanciar a classe Multicast
     * **ListenMulticast** | é uma thread responsável por invocar o método `join()` do multicast, que entrará em loop infinito para ouvir as mensagens dos usuários.   
     * **Multicast** | reponsável pela conexão com o protocolo multicast. Alguns de seus métodos são:
@@ -45,4 +45,5 @@ Obs: é possível que o mesmo usuário (cliente) entre em mais de uma sala. Por 
     * **Server** | recebe requisições do cliente e responde. Algumas de suas tarefas são:
         * Prover um ip multicast válido para cada sala de bate-papo
         * Manter uma lista das salas criadas
-        * Listar salas e os membros dessas salas.
+        * Listar salas e os membros dessas salas
+        * Adicionar novos membros a uma sala
